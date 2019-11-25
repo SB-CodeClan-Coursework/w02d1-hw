@@ -25,6 +25,9 @@ class CodeClanStudent
     return "I can talk"
   end
 
+  def favourite_language(fav_lang)
+    return "I love #{fav_lang}!"
+  end
 
 
 

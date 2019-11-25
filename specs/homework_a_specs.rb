@@ -33,6 +33,10 @@ def test_student_can_talk
   assert_equal("I can talk", student.can_talk)
 end
 
+def test_favourite_language
+  student = CodeClanStudent.new("Stephen", 36)
+  assert_equal("I love Ruby!", student.favourite_language("Ruby"))
+end
 
 
 
