@@ -28,6 +28,10 @@ def test_set_student_cohort
   assert_equal(37, student.get_student_cohort)
 end
 
+def test_student_can_talk
+  student = CodeClanStudent.new("Stephen", 36)
+  assert_equal("I can talk", student.can_talk)
+end
 
 
 

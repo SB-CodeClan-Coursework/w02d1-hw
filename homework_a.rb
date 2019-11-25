@@ -21,7 +21,9 @@ class CodeClanStudent
     @cohort = cohort
   end
 
-
+  def can_talk
+    return "I can talk"
+  end
 
 
 
