@@ -11,11 +11,31 @@ def test_get_student_name
   assert_equal("Stephen", student.get_student_name)
 end
 
-
 def test_get_student_cohort
   student = CodeClanStudent.new("Stephen", 36)
   assert_equal(36, student.get_student_cohort)
 end
+
+def test_set_student_name
+  student = CodeClanStudent.new("Stephen", 36)
+  student.set_student_name("Paddy")
+  assert_equal("Paddy", student.get_student_name)
+end
+
+def test_set_student_cohort
+  student = CodeClanStudent.new("Stephen", 36)
+  student.set_student_cohort(37)
+  assert_equal(37, student.get_student_cohort)
+end
+
+
+
+
+
+
+
+
+
 
 
 
