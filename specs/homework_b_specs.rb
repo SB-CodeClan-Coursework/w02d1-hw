@@ -49,6 +49,13 @@ class TestSportsTeam < MiniTest::Test
   assert_equal(1, sports_team.points)
   end
 
+  def check_if_won
+    def test_add_points
+    sports_team = SportsTeam.new("E37 Table Tennis Team", ["Robert", "Shane", "Robert M", "Bacon McGee"], "Big Bob")
+    sports_team.add_points("win")
+    assert_equal(1, sports_team.points)
+    end
+
 
 # def test_get_players
 #   sports_team = SportsTeam.new("E37 Table Tennis Team", ["Robert", "Shane", "Robert M"], "Big Bob")
